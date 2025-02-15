@@ -1,0 +1,14 @@
+# Python-specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+
+# VS Code
+.vscode/
+
+# Credentials
+.env
+config.json
