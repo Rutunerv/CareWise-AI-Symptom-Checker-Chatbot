@@ -1,0 +1,5 @@
+flask
+streamlit
+json
+python
+speechrecognition pyttsx3 pyaudio

@@ -1,0 +1,73 @@
+DOCUMENTATION
+
+# CareWise AI Symptom Checker Chatbot
+
+## Introduction
+CareWise is an AI-powered symptom checker chatbot designed to assist users in assessing their health conditions based on symptoms they provide. It leverages Generative AI and Google's PaLM model to offer possible diagnoses and health recommendations, ensuring accessible and user-friendly healthcare information.
+
+## Features
+- **AI-Powered Symptom Analysis**: Uses advanced Generative AI to analyze symptoms and provide potential diagnoses.
+- **Voice Assistance**: Enables users to interact with the chatbot through voice input for a seamless experience.
+- **User-Friendly Interface**: Designed with an intuitive UI for smooth navigation and interaction.
+- **Medical Advice Recommendations**: Suggests whether users should seek medical consultation based on symptom severity.
+- **Secure Data Handling**: Ensures user privacy and data security with robust encryption.
+
+## Technologies Used
+- **Frontend**: Streamlit
+- **Backend**: Python (FastAPI / Flask)
+- **AI Model**: Google PaLM
+- **Database**: Firebase / MongoDB
+- **Cloud Deployment**: Google Cloud / AWS
+
+## Installation Guide
+### Prerequisites
+Ensure you have the following installed:
+- **Python 3.x**
+- **Git**
+
+### Setup Instructions
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Rutunerv/CareWise-AI-Symptom-Checker-Chatbot.git
+   ```
+2. Navigate to the project folder and install dependencies:
+   ```sh
+   cd CareWise-AI-Symptom-Checker-Chatbot
+   pip install -r requirements.txt
+   ```
+3. Start the backend server:
+   ```sh
+   python app.py
+   ```
+4. Start the Streamlit UI:
+   ```sh
+   streamlit run app_ui.py
+   ```
+
+## Usage Guide
+- Open the web interface in your browser.
+- Enter or speak your symptoms.
+- The AI will analyze the input and provide potential diagnoses.
+- Follow the recommended actions for further care and medical advice.
+
+## API Reference
+| Endpoint       | Method | Description |
+|---------------|--------|-------------|
+| `/predict`    | POST   | Takes symptoms as input and returns a possible diagnosis. |
+| `/voice-input`| POST   | Processes voice input for symptom analysis. |
+| `/feedback`   | POST   | Allows users to submit feedback on AI recommendations. |
+| `/user-profile` | GET  | Fetches user health profile and past interactions. |
+
+## Contributing
+Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch (`feature-xyz`).
+3. Commit your changes.
+4. Push to your fork and create a pull request.
+
+## License
+This project is licensed under the MIT License.
+
+---
+Let me know if you need any modifications or additions! 🚀
+

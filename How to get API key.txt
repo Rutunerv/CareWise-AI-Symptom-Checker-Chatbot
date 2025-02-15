@@ -1,0 +1,35 @@
+To get your **PaLM API key** (now called **Google AI Gemini API key**), follow these steps:  
+
+### **Step 1: Sign Up for Google AI Studio**  
+1. Go to **[Google AI Studio](https://aistudio.google.com/)**  
+2. Sign in with your Google account.  
+
+---
+
+### **Step 2: Get Your API Key**  
+1. Click on your profile icon (top right corner).  
+2. Select **"Get API Key"** (or **"Manage API Keys"**).  
+3. Click **"Create API Key"** and copy the key.
+
+---
+
+### **Step 3: Use Your API Key in Your Python Code**  
+Replace `"YOUR_API_KEY"` in your `app.py` file:  
+```python
+genai.configure(api_key="your_actual_api_key_here")
+```
+
+---
+
+### **Step 4: Test Your API Key**  
+Run this simple test script to ensure the key works:
+```python
+import google.generativeai as genai
+
+genai.configure(api_key="your_actual_api_key_here")
+
+model = genai.GenerativeModel("gemini-pro")
+response = model.generate_content("Hello, how are you?")
+print(response.text)
+```
+If this prints a valid response, your API key is working! 🚀  
